@@ -21,7 +21,7 @@ img{
 .split{
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 /* header */
 .header{
@@ -34,4 +34,15 @@ align-items: center;
     font-weight: 700;
     font-size: 36px;
     font-family: 'Courier New', Courier, monospace;
+}
+/* input section */
+.dog-img{
+    background: url('../abstract-mood-series-website-background-color-images-high-resolution-abstract-mood-backgrounds-images-designed-use-websites-157859506.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width:65px;
+    height:65px;
+    border-radius: 50px;
+    border:2px black solid;
 }
