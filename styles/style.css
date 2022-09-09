@@ -10,3 +10,16 @@ img{
 .primary-bg{
     background: #feea3b;
 }
+.container{
+    padding: 5% 10%;
+}
+.text-stroke{
+    color: white;
+    -webkit-text-stroke: black 1.5px;
+}
+.split{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
