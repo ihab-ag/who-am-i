@@ -5,7 +5,8 @@ window.onload = (event) =>{
     const gender= document.getElementById('gender');
     const age=document.getElementById('age');
     const dogImg=document.getElementById('dog-img');
-    const colorPrimary=document.querySelectorAll('* .primary-bg')
+    const colorPrimary=document.querySelectorAll('* .primary-bg');
+    const nationalities=document.getElementById('nationalities');
     // variables
     let name = '';
 
@@ -66,6 +67,30 @@ window.onload = (event) =>{
         let api = "https://api.nationalize.io/?name="+name;
         let x= await fetch(api);
         let y= x.json();
-        let nationalities=y["countries"];
+        let nats=y["countries"];
+    }
+    // create nationality elements
+    function createNats(nats){
+        nats.forEach(nat => {
+            // declare needed elements
+            let natCode=nat['country_id'];
+            let containerNat= document.createElement('div');
+            let imgNat= document.createElement('div');
+            let pNat=document.createElement('p');
+            let url="https://countryflagsapi.com/svg/"+natCode;
+            // add needed classes to elements
+            containerNat.classList="split nationality";
+            imgNat.classList="nationality-img";
+            pNat.classList="normal-text bold-text";
+            // add content to elements
+            imgNat.style.backgroundImage="url('"+url+"')";
+            pNat.innerText=natCode;
+            // append to container
+            containerNat.appendChild(imgNat);
+            containerNat.appendChild(pNat);
+            // append to dom
+            nationalities.appendChild(containerNat);
+        });
+        
     }
 }
