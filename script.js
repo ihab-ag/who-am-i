@@ -2,10 +2,9 @@ window.onload = (event) =>{
     // elements
     const input= document.getElementById('input');
     const submitBtn= document.getElementById('submitBtn');
-    const txtGender= document.getElementById('gender');
+    const gender= document.getElementById('gender');
     // variables
     let name = '';
-    let gender='';
 
     //events
     submitBtn.onclick=()=>{
@@ -22,6 +21,7 @@ window.onload = (event) =>{
         api = api.concat(name);
         let x = await fetch(api);
         let y = await x.json();
-        gender = y["gender"];
+        gender.innerText = y["gender"];
+
     }
 }
