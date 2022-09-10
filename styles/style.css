@@ -115,9 +115,16 @@ align-items: center;
     min-width:65px;
 }
 /* media queries */
+/* input__btn font size */
 @media screen and (max-width:400px){
-    /* input__btn font size */
     .input__btn{
         font-size: 4vw;
+    }
+}
+/* dog pic size for large screens*/
+@media screen and (min-width:500px){
+    .dog-img{
+        width:80px;
+        height:80px;
     }
 }
