@@ -83,3 +83,10 @@ align-items: center;
     cursor: pointer;
     border: solid 1px black;
 }
+/* output section */
+.normal-text{
+    font-weight: 400;
+    font-size: 20px;
+    margin-right: auto;
+    padding: 6px 0;
+}
