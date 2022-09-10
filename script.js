@@ -43,7 +43,7 @@ window.onload = (event) =>{
         api = api.concat(name);
         let x = await fetch(api);
         let y = await x.json();
-        y= y["age"];
+        y=y["age"];
         age.innerText = y;
     }
     // get dog pic from api
@@ -60,5 +60,12 @@ window.onload = (event) =>{
         for(let i=0; i<colorPrimary.length; i++) {
             colorPrimary[i].style.background = color;
           }
+    }
+    // get nationality from api
+    async function getNat(){
+        let api = "https://api.nationalize.io/?name="+name;
+        let x= await fetch(api);
+        let y= x.json();
+        let nationalities=y["countries"];
     }
 }
