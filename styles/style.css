@@ -49,10 +49,11 @@ align-items: center;
 .input{
     display: flex;
     flex-direction: column;
-    gap:30px;
+    gap:25px;
+    justify-content: end;
 }
 .input__text{
     font-weight: 400;
-    font-size: 30px;
+    font-size: 22px;
     line-height: 39px;
 }
