@@ -30,8 +30,11 @@ window.onload = (event) =>{
         // capitalise first letter
         y= y["gender"].charAt(0).toUpperCase() + y["gender"].slice(1);
         gender.innerText = y;
-        if(y=='male'){
-
+        if(y=='Male'){
+            changeColor("#3B89FE");
+        }
+        else{
+            changeColor('#feb6ff');
         }
     }
     // get age from api
