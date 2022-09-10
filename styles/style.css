@@ -63,6 +63,7 @@ align-items: center;
     padding: 13px;
     background-color: #f3f3f3;
     border-radius: 5px;
+    font-size: 18px;
 }
 .input__input::placeholder{
     color:rgb(133, 132, 132);
