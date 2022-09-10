@@ -50,7 +50,7 @@ align-items: center;
     display: flex;
     flex-direction: column;
     gap:10px;
-    justify-content: end;
+    align-items: flex-end;
 }
 .input__text{
     font-weight: 400;
@@ -59,6 +59,7 @@ align-items: center;
     padding:13px;
 }
 .input__input{
+    width:100%;
     border:none;
     padding: 13px;
     background-color: #f3f3f3;
@@ -69,4 +70,7 @@ align-items: center;
     color:rgb(133, 132, 132);
     font-size: 18px;
     font-weight: lighter;
+}
+.input__btn{
+    width:40%;
 }
