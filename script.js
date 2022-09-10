@@ -4,6 +4,7 @@ window.onload = (event) =>{
     const submitBtn= document.getElementById('submitBtn');
     const gender= document.getElementById('gender');
     const age=document.getElementById('age');
+    const dogImg=document.getElementById('dog-img')
     // variables
     let name = '';
 
