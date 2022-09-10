@@ -46,3 +46,8 @@ align-items: center;
     border-radius: 50px;
     border:2px black solid;
 }
+.input{
+    display: flex;
+    flex-direction: column;
+    gap:30px;
+}
