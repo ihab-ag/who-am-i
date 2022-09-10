@@ -5,7 +5,7 @@ window.onload = (event) =>{
     const gender= document.getElementById('gender');
     const age=document.getElementById('age');
     const dogImg=document.getElementById('dog-img');
-    const colorPrimary=document.querySelectorAll('* .primary-color')
+    const colorPrimary=document.querySelectorAll('* .primary-bg')
     // variables
     let name = '';
 
@@ -17,7 +17,6 @@ window.onload = (event) =>{
         getGender();
         getAge();
     }
-
     //functions
     function getName(){
         name = input.value;
@@ -53,5 +52,10 @@ window.onload = (event) =>{
         console.log(url);
         dogImg.style.backgroundImage="url('"+url+"')";
     }
-    
+    // change primary color
+    function changeColor(color){
+        for(let i=0; i<colorPrimary.length; i++) {
+            colorPrimary[i].style.background = color;
+          }
+    }
 }
