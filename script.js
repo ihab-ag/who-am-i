@@ -93,10 +93,14 @@ window.onload = (event) =>{
             containerNat.appendChild(pNat);
             // append to dom
             nationalities.appendChild(containerNat);
+<<<<<<< HEAD
 
         });
             
         
+=======
+        });
+>>>>>>> 7bae27450b7651c99002f457106a9d1361a2ac82
         
     }
 }
