@@ -5,8 +5,10 @@ window.onload = (event) =>{
     // variables
     let name = '';
 
-    //implementation
-    
+    //events
+    submitBtn.onclick=()=>{
+        getName();
+    }
 
     //functions
     function getName(){
