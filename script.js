@@ -16,12 +16,14 @@ window.onload = (event) =>{
     function getName(){
         name = input.value;
     }
-    async function getGender(name) {
+    async function getGender() {
         let api = 'https://api.genderize.io/?name=';
         api = api.concat(name);
         let x = await fetch(api);
         let y = await x.json();
-        gender.innerText = y["gender"];
+        // capitalise first letter
+        y= y["gender"].charAt(0).toUpperCase() + y["gender"].slice(1);
+        gender.innerText = y;
 
     }
 }
