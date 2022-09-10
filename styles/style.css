@@ -49,11 +49,23 @@ align-items: center;
 .input{
     display: flex;
     flex-direction: column;
-    gap:25px;
+    gap:10px;
     justify-content: end;
 }
 .input__text{
     font-weight: 400;
     font-size: 22px;
     line-height: 39px;
+    padding:13px;
+}
+.input__input{
+    border:none;
+    padding: 13px;
+    background-color: #f3f3f3;
+    border-radius: 5px;
+}
+.input__input::placeholder{
+    color:rgb(133, 132, 132);
+    font-size: 18px;
+    font-weight: lighter;
 }
