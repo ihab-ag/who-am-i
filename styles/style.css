@@ -93,3 +93,11 @@ align-items: center;
 .bold-text{
     font-weight: 600;
 }
+.nationality-img{
+    background: url('../abstract-mood-series-website-background-color-images-high-resolution-abstract-mood-backgrounds-images-designed-use-websites-157859506.jpg');
+    height:100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-width:65px;
+}
