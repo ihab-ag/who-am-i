@@ -33,7 +33,7 @@ window.onload = (event) =>{
         let x = await fetch(api);
         let y = await x.json();
         // capitalise first letter
-        y= y["gender"].charAt(0).toUpperCase() + y["gender"].slice(1);
+        y= y["age"]
         age.innerText = y;
     }
 }
