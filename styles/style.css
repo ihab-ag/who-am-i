@@ -71,12 +71,15 @@ align-items: center;
 }
 .input__btn{
     width:40%;
-    font-size:20px;
-    color:rgb(245, 225, 225);
-    -webkit-text-stroke: 0.9px black;
+    font-size:18px;
+    color:rgb(56, 54, 54);
     font-weight:1000;
-    padding:8px;
+    padding:10px;
     border:none;
     border-radius:5px;
     font-family: 'Courier New', Courier, monospace;
+}
+.input__btn:hover{
+    cursor: pointer;
+    border: solid 1px black;
 }
