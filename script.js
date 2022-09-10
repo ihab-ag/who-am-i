@@ -11,6 +11,7 @@ window.onload = (event) =>{
     submitBtn.onclick=()=>{
         getName();
         getGender();
+        getAge();
     }
 
     //functions
@@ -25,6 +26,14 @@ window.onload = (event) =>{
         // capitalise first letter
         y= y["gender"].charAt(0).toUpperCase() + y["gender"].slice(1);
         gender.innerText = y;
-
+    }
+    async function getAge() {
+        let api = 'https://api.agify.io/?name=';
+        api = api.concat(name);
+        let x = await fetch(api);
+        let y = await x.json();
+        // capitalise first letter
+        y= y["gender"].charAt(0).toUpperCase() + y["gender"].slice(1);
+        age.innerText = y;
     }
 }
