@@ -96,15 +96,28 @@ align-items: center;
 .nationalities{
     display: flex;
     flex-direction: column;
+    gap:15px;
+    padding-top: 40px;
+    margin-right: auto;
 }
 .nationalities:first-child{
     height: 30px;
 }
+.nationality{
+    gap:20px;
+}
 .nationality-img{
-    background: url('../abstract-mood-series-website-background-color-images-high-resolution-abstract-mood-backgrounds-images-designed-use-websites-157859506.jpg');
+    background: url('https://countryflagsapi.com/svg/lb');
     height:100%;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     min-width:65px;
+}
+/* media queries */
+@media screen and (max-width:400px){
+    /* input__btn font size */
+    .input__btn{
+        font-size: 4vw;
+    }
 }
