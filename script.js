@@ -2,6 +2,7 @@ window.onload = (event) =>{
     // elements
     const input= document.getElementById('input');
     const submitBtn= document.getElementById('submitBtn');
+    const txtGender= document.getElementById('gender');
     // variables
     let name = '';
     let gender='';
