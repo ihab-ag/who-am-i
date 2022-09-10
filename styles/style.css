@@ -41,7 +41,7 @@ align-items: center;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    width:65px;
+    min-width:65px;
     height:65px;
     border-radius: 50px;
     border:2px black solid;
@@ -50,4 +50,9 @@ align-items: center;
     display: flex;
     flex-direction: column;
     gap:30px;
+}
+.input__text{
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 39px;
 }
