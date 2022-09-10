@@ -1,3 +1,4 @@
 window.onload = (event) =>{
-    console.log('hello world');
+    // elements
+    const input= document.getElementById('input');
 }
