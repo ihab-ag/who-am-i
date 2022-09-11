@@ -19,6 +19,15 @@ img{
     flex-direction: row;
     justify-content: space-around;
 }
+/* login */
+.login{
+    display: flex;
+    justify-content: center;
+}
+.login .container{
+    max-width:500px
+}
+/* interface */
 .interface{
     display:none;
 }
