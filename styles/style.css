@@ -19,6 +19,9 @@ img{
     flex-direction: row;
     justify-content: space-around;
 }
+.interface{
+    display:none;
+}
 /* header */
 .header{
     display: flex;
