@@ -21,7 +21,7 @@ window.onload = (event) =>{
     let user='';    //events
     signupBtn.onclick=()=>{
         getUser();
-        if(getItem(user)=='exists'){
+        if(localStorage.getItem(user)=='exists'){
             msg.innerText="user already exists";
         }
         else{
@@ -31,8 +31,11 @@ window.onload = (event) =>{
     }
     signinBtn.onclick=()=>{
         getUser();
-        if(getItem(user)!='exists'){
+        if(localStorage.getItem(user)!='exists'){
             msg.innerText="user doesn't exist, sign up";
+        }
+        else{
+            logIn();
         }
     }
     getDog();
@@ -47,6 +50,11 @@ window.onload = (event) =>{
         getNat();
     }
     //functions
+    // login to interface
+    function logIn(){
+        login.style.display='none';
+        interface.style.display='block';
+    }
     // get username
     function getUser(){
         user = username.value;
