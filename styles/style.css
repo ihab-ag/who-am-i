@@ -133,6 +133,20 @@ max-height: 15vh;
 .footer p{
     font-size: 20px;
 }
+.bored__btn{
+    border:none;
+    font-size:18px;
+    color:rgb(56, 54, 54);
+    font-weight:400;
+    border-radius: 5px;
+    padding:2px;
+    width:100%;
+}
+.bored__btn:hover{
+    color:white;
+    background-color: rgb(56, 54, 54);
+    cursor:pointer;
+}
 /* media queries */
 /* input__btn font size */
 @media screen and (max-width:400px){
