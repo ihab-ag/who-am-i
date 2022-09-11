@@ -14,6 +14,8 @@ window.onload = (event) =>{
     const signinBtn=document.getElementById('signinBtn');
     const signupBtn=document.getElementById('signupBtn');
     const msg=document.getElementById('msg');
+    const interface=document.querySelector(".interface");
+    const login=document.querySelector('.login');
     // variables
     let name = '';
     let user='';    //events
