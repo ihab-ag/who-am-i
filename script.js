@@ -7,12 +7,14 @@ window.onload = (event) =>{
     const dogImg=document.getElementById('dog-img');
     const colorPrimary=document.querySelectorAll('* .primary-bg');
     const nationalities=document.getElementById('nationalities');
+    const ip=document.getElementById('IP');
     // variables
     let name = '';
 
     //events
     
     getDog();
+    getIP();
     submitBtn.onclick=()=>{
         getName();
         getGender();
@@ -96,6 +98,13 @@ window.onload = (event) =>{
 
         });
             
-        
     }
+    // get IP with axios
+    function getIP(){
+        axios.get('https://api.ipify.org/?format=json')
+            .then(response => {
+                ip.innerText = response.data.ip;
+            })
+            .catch(error => console.error(error));
+    };
 }
