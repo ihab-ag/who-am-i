@@ -132,7 +132,7 @@ max-height: 15vh;
     position: absolute;
     bottom: 0;
     width:100vw;
-    max-height: 12vh;
+    height:min(500px,15vh) ;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -152,7 +152,7 @@ max-height: 15vh;
     font-weight:400;
     border-radius: 5px;
     padding:2px;
-    width:100%;
+    width:max(100%,100px);
 }
 .bored__btn:hover{
     color:white;
