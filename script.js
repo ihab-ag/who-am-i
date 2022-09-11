@@ -10,6 +10,9 @@ window.onload = (event) =>{
     const ip=document.getElementById('IP');
     const activity=document.getElementById('activity');
     const boredBtn=document.getElementById('bored-btn');
+    const username=document.getElementById('username');
+    const signinBtn=document.getElementById('signinBtn');
+    const signupBtn=document.getElementById('signupBtn');
     // variables
     let name = '';
 
