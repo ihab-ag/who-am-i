@@ -13,11 +13,26 @@ window.onload = (event) =>{
     const username=document.getElementById('username');
     const signinBtn=document.getElementById('signinBtn');
     const signupBtn=document.getElementById('signupBtn');
+    const msg=document.getElementById('msg');
     // variables
     let name = '';
-
-    //events
-    
+    let user='';    //events
+    signupBtn.onclick=()=>{
+        getUser();
+        if(getItem(user)=='exists'){
+            msg.innerText="user already exists";
+        }
+        else{
+        localStorage.setItem(user,"exists");
+        msg.innerText="user added";
+        }
+    }
+    signinBtn.onclick=()=>{
+        getUser();
+        if(getItem(user)!='exists'){
+            msg.innerText="user doesn't exist, sign up";
+        }
+    }
     getDog();
     getIP();
     boredBtn.onclick=() =>{
@@ -30,6 +45,10 @@ window.onload = (event) =>{
         getNat();
     }
     //functions
+    // get username
+    function getUser(){
+        user = username.value;
+    }
     function getName(){
         name = input.value;
     }
