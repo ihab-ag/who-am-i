@@ -8,6 +8,8 @@ window.onload = (event) =>{
     const colorPrimary=document.querySelectorAll('* .primary-bg');
     const nationalities=document.getElementById('nationalities');
     const ip=document.getElementById('IP');
+    const activity=document.getElementById('activity');
+    const boredBtn=document.getElementById('bored-btn');
     // variables
     let name = '';
 
@@ -15,6 +17,9 @@ window.onload = (event) =>{
     
     getDog();
     getIP();
+    boredBtn.onclick=() =>{
+        getActivity();
+    }
     submitBtn.onclick=()=>{
         getName();
         getGender();
@@ -104,6 +109,14 @@ window.onload = (event) =>{
         axios.get('https://api.ipify.org/?format=json')
             .then(response => {
                 ip.innerText = response.data.ip;
+            })
+            .catch(error => console.error(error));
+    };
+    // get activity with axios
+    function getActivity(){
+        axios.get('www.boredapi.com/api/activity')
+            .then(response => {
+                activity.innerText = response.data['activity'];
             })
             .catch(error => console.error(error));
     };
