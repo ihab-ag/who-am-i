@@ -126,6 +126,9 @@ footer{
     display: flex;
     align-items: center;
 }
+footer .container{
+    height: 100%;
+}
 /* media queries */
 /* input__btn font size */
 @media screen and (max-width:400px){
