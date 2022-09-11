@@ -116,18 +116,23 @@ max-height: 15vh;
     min-width:65px;
 }
 /* footer */
-footer{
-    color:white;
-    -webkit-text-stroke: black 1px;
+.footer{
     position: absolute;
     bottom: 0;
     width:100vw;
     max-height: 12vh;
     display: flex;
     align-items: center;
+    justify-content: space-between;
     padding: 5%;
 }
-
+.footer h4{
+    color:white;
+    -webkit-text-stroke: black 1px;
+}
+.footer p{
+    font-size: 20px;
+}
 /* media queries */
 /* input__btn font size */
 @media screen and (max-width:400px){
